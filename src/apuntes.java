@@ -1,45 +1,32 @@
-Aquí tienes una lista de los métodos de la clase `Math` en Java, junto con una breve descripción de lo que hacen y su sintaxis:
-
+/* Aquí tienes una lista de los métodos de la clase `Math` en Java, junto con una breve descripción de lo que hacen y su sintaxis:
 1. `abs(x)`: Devuelve el valor absoluto de un número.
    Sintaxis: `Math.abs(x)`
-
 2. `ceil(x)`: Redondea un número hacia arriba al entero más cercano.
    Sintaxis: `Math.ceil(x)`
-
 3. `floor(x)`: Redondea un número hacia abajo al entero más cercano.
    Sintaxis: `Math.floor(x)`
-
 4. `round(x)`: Redondea un número al entero más cercano.
    Sintaxis: `Math.round(x)`
-
 5. `max(x, y)`: Devuelve el valor máximo entre dos números.
    Sintaxis: `Math.max(x, y)`
-
 6. `min(x, y)`: Devuelve el valor mínimo entre dos números.
    Sintaxis: `Math.min(x, y)`
-
 7. `pow(x, y)`: Calcula el valor de x elevado a la potencia y.
    Sintaxis: `Math.pow(x, y)`
-
 8. `sqrt(x)`: Calcula la raíz cuadrada de un número.
    Sintaxis: `Math.sqrt(x)`
-
 9. `exp(x)`: Calcula el valor de e elevado a la potencia x.
    Sintaxis: `Math.exp(x)`
-
 10. `log(x)`: Calcula el logaritmo natural (base e) de un número.
     Sintaxis: `Math.log(x)`
-
 11. `sin(x)`: Calcula el seno de un ángulo en radianes.
     Sintaxis: `Math.sin(x)`
-
 12. `cos(x)`: Calcula el coseno de un ángulo en radianes.
     Sintaxis: `Math.cos(x)`
-
 13. `tan(x)`: Calcula la tangente de un ángulo en radianes.
     Sintaxis: `Math.tan(x)`
-
 14. `random()`: Genera un número aleatorio entre 0.0 y 1.0.
     Sintaxis: `Math.random()`
+Recuerda que la clase `Math` es una clase utilitaria que proporciona métodos estáticos para realizar operaciones matemáticas comunes.*/
 
-Recuerda que la clase `Math` es una clase utilitaria que proporciona métodos estáticos para realizar operaciones matemáticas comunes.
+
