@@ -49,6 +49,7 @@ public class Auto {
 		System.out.println("Elige de 1 a 3 ...");
 		int aux = ent.nextInt();
 		
+		
 		switch (aux) {
 		case 1:
 			System.out.println("Marca: "+car1.getMarca()+"\nModelo: "+car1.getModelo()+"\nAño: "+car1.getAño());
@@ -58,7 +59,38 @@ public class Auto {
 			break;
 		case 3:
 			System.out.println("Marca: "+car3.getMarca()+"\nModelo: "+car3.getModelo()+"\nAño: "+car3.getAño());
-			break;
+			break;		
+		}
+		
+		Auto car4 = new Auto();
+		int menu = 1;
+		String auxString; 
+		
+		while (menu != 0) {
+			
+			System.out.println("\n1) Modificar marca\n2) Modificar modelo \n3) modificar año \n0) Salir");
+			menu = ent.nextInt();
+			ent.nextLine();
+			switch (menu) {
+			case 1:
+				auxString = ent.nextLine();
+				car4.setMarca(auxString);
+				break;
+			case 2:
+				auxString = ent.nextLine();
+				car4.setModelo(auxString);
+				break;
+			case 3:
+				aux = ent.nextInt();
+				car4.setAño(aux);
+				break;
+			}
+
+			
+			String aux1 = car4.getMarca();
+			String aux2 = car4.getModelo();
+			int aux3 = car4.getAño();
+			System.out.println("marca: "+aux1+"\nmodelo: "+aux2+"\naño: "+aux3);
 		}
 				
 	}
