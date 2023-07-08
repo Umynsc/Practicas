@@ -1,26 +1,26 @@
 package tp3B;
 
 public class producto {
-	String nombre;
-	double precio;
-	long cantidad;
+	private String nombre;
+	private double precio;
+	private long cantidad;
 	
-	public producto(String nombre,double precio,long cantidad) {
+	private  producto(String nombre,double precio,long cantidad) {
 		this.nombre = nombre;
 		this.precio = precio;
 		this.cantidad = cantidad;
 	}
-	public producto(String nombre,double precio) {
+	private  producto(String nombre,double precio) {
 		this.nombre = nombre;
 		this.precio = precio;
 		this.cantidad = 0;
 	}
 	
-	public void mostrarEstado() {
+	private  void mostrarEstado() {
 		System.out.println("Nombre: "+this.nombre+"\nPrecio: $"+this.precio+"\nCantidad: "+this.cantidad+"\n");
 	}
 	
-	public boolean comparar(producto  otroItem) {
+	private  boolean comparar(producto  otroItem) {
 		return (this.nombre.equals(otroItem.nombre)) && (this.precio == otroItem.precio) && (this.cantidad == otroItem.cantidad);
 		}
 	
