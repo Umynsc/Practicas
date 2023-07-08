@@ -5,12 +5,15 @@ public class estudiante {
 	int edad;
 	
 	public estudiante() {
-		
+		this.nombre = " ";
+		this.edad = 0;
 	}
 	public estudiante(String nombre) {
 		this.nombre = nombre;
+		this.edad = 0;
 	}
 	public estudiante(int edad) {
+		this.nombre = " ";
 		this.edad = edad;
 	}
 	public estudiante(String nombre,int edad) {
@@ -19,16 +22,16 @@ public class estudiante {
 	}
 		
 	public void mostrarEstado() {
-		System.out.println("Nombre: "+this.nombre+"\nEdad: $"+this.edad+"\n");
+		System.out.println("Nombre: "+this.nombre+"\nEdad: "+this.edad+"\n");
 	}
 	
 	public boolean comparar(estudiante  otroItem) {
 		if ((this.nombre.equals(otroItem.nombre)) && (this.edad == otroItem.edad)) {
 			return true;
 		}
-		else 
-			{return false;
-			}
+		else {
+			return false;
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -43,6 +46,11 @@ public class estudiante {
 		e3.mostrarEstado();
 		e4.mostrarEstado();
 		
+		if (e2.comparar(e3)) {
+			System.out.println("Iguales");
+		} else {
+			System.out.println("Diferentes");
+		}
 		
 	}
 
