@@ -64,8 +64,9 @@ public class circulo {
 		
 	}
 }
-
-/*Implementar una clase "Círculo" con atributos como radio y color. Crear varios
+/*
+ * Implementar una clase "Círculo" con atributos como radio y color. Crear varios
 objetos de tipo "Círculo" y utilizar métodos para establecer y obtener el radio y
 el color de cada círculo. Añade métodos para realizar el cálculo de área y
-perímetro respectivamente.*/
+perímetro respectivamente.
+ */

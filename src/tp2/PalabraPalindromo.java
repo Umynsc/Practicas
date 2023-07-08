@@ -1,6 +1,6 @@
 package tp2;
 import java.util.Scanner;
-public class PalabraPalindromo {
+public class palabraPalindromo {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
