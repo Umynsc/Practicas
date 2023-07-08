@@ -1,25 +1,25 @@
 package tp3B;
 
 public class empleado {
-	String nombre;
-	double salario;
-	String departamento;
+	private String nombre;
+	private double salario;
+	private String departamento;
 	
-	public empleado(String nombre,double salario,String departamento) {
+	private  empleado(String nombre,double salario,String departamento) {
 		this.nombre = nombre;
 		this.salario = salario;
 		this.departamento = departamento;
 	}
-	public empleado(String nombre,double salario) {
+	private  empleado(String nombre,double salario) {
 		this.nombre = nombre;
 		this.salario = salario;
 		this.departamento = "Sin departamento";
 	}
-	public void mostrarEstado() {
+	private  void mostrarEstado() {
 		System.out.println("Nombre: "+this.nombre+"\nSalario: $"+this.salario+"\nDepartamento: "+this.departamento+"\n");
 	}
 	
-	public boolean comparar(empleado  otroItem) {
+	private  boolean comparar(empleado  otroItem) {
 		if ((this.nombre.equals(otroItem.nombre)) && (this.salario == otroItem.salario) && (this.departamento.equals(otroItem.departamento))) {
 			return true;
 		}
@@ -30,12 +30,12 @@ public class empleado {
 	
 	
 	public static void main(String[] args) {
-		empleado e1 = new empleado("Noelia",100,"ciencias");
-		empleado e2 = new empleado("Sus",50);
+		empleado empleado1 = new empleado("Noelia",100,"ciencias");
+		empleado empleado2 = new empleado("Sus",50);
 	
-		e1.mostrarEstado();
-		e2.mostrarEstado();
-		if (e1.comparar(e2)) {System.out.println("Iguales");
+		empleado1.mostrarEstado();
+		empleado2.mostrarEstado();
+		if (empleado1.comparar(empleado2)) {System.out.println("Iguales");
 		} else {System.out.println("diferentes");
 		}
 	}
