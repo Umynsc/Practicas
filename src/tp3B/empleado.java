@@ -15,12 +15,29 @@ public class empleado {
 		this.salario = salario;
 		this.departamento = "Sin departamento";
 	}
+	public void mostrarEstado() {
+		System.out.println("Nombre: "+this.nombre+"\nSalario: $"+this.salario+"\nDepartamento: "+this.departamento+"\n");
+	}
+	
+	public boolean comparar(empleado  otroItem) {
+		if ((this.nombre.equals(otroItem.nombre)) && (this.salario == otroItem.salario) && (this.departamento.equals(otroItem.departamento))) {
+			return true;
+		}
+		else 
+			{return false;
+			}
+	}
+	
 	
 	public static void main(String[] args) {
 		empleado e1 = new empleado("Noelia",100,"ciencias");
 		empleado e2 = new empleado("Sus",50);
 	
-		System.out.println(e2.departamento);
+		e1.mostrarEstado();
+		e2.mostrarEstado();
+		if (e1.comparar(e2)) {System.out.println("Iguales");
+		}else {System.out.println("diferentes");
+		}
 	}
 	
 	
