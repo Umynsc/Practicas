@@ -36,7 +36,7 @@ public class empleado {
 		e1.mostrarEstado();
 		e2.mostrarEstado();
 		if (e1.comparar(e2)) {System.out.println("Iguales");
-		}else {System.out.println("diferentes");
+		} else {System.out.println("diferentes");
 		}
 	}
 	
