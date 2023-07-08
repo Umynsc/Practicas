@@ -18,6 +18,18 @@ public class estudiante {
 		this.edad = edad;
 	}
 		
+	public void mostrarEstado() {
+		System.out.println("Nombre: "+this.nombre+"\nEdad: $"+this.edad+"\n");
+	}
+	
+	public boolean comparar(estudiante  otroItem) {
+		if ((this.nombre.equals(otroItem.nombre)) && (this.edad == otroItem.edad)) {
+			return true;
+		}
+		else 
+			{return false;
+			}
+	}
 	
 	public static void main(String[] args) {
 	
@@ -25,6 +37,12 @@ public class estudiante {
 		estudiante e2 = new estudiante("Julia");
 		estudiante e3 = new estudiante(45);
 		estudiante e4 = new estudiante("jose",24);
+		
+		e1.mostrarEstado();
+		e2.mostrarEstado();
+		e3.mostrarEstado();
+		e4.mostrarEstado();
+		
 		
 	}
 
