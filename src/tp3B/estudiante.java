@@ -1,31 +1,31 @@
 package tp3B;
 
 public class estudiante {
-	String nombre;
-	int edad;
+	private String nombre;
+	private int edad;
 	
-	public estudiante() {
+	private estudiante() {
 		this.nombre = " ";
 		this.edad = 0;
 	}
-	public estudiante(String nombre) {
+	private estudiante(String nombre) {
 		this.nombre = nombre;
 		this.edad = 0;
 	}
-	public estudiante(int edad) {
+	private estudiante(int edad) {
 		this.nombre = " ";
 		this.edad = edad;
 	}
-	public estudiante(String nombre,int edad) {
+	private estudiante(String nombre,int edad) {
 		this.nombre = nombre;
 		this.edad = edad;
 	}
 		
-	public void mostrarEstado() {
+	private void mostrarEstado() {
 		System.out.println("Nombre: "+this.nombre+"\nEdad: "+this.edad+"\n");
 	}
 	
-	public boolean comparar(estudiante  otroItem) {
+	private boolean comparar(estudiante  otroItem) {
 		if ((this.nombre.equals(otroItem.nombre)) && (this.edad == otroItem.edad)) {
 			return true;
 		}
@@ -36,17 +36,17 @@ public class estudiante {
 	
 	public static void main(String[] args) {
 	
-		estudiante e1 = new estudiante();
-		estudiante e2 = new estudiante("Julia");
-		estudiante e3 = new estudiante(45);
-		estudiante e4 = new estudiante("jose",24);
+		estudiante estudiante1 = new estudiante();
+		estudiante estudiante2 = new estudiante("Julia");
+		estudiante estudiante3 = new estudiante(45);
+		estudiante estudiante4 = new estudiante("jose",24);
 		
-		e1.mostrarEstado();
-		e2.mostrarEstado();
-		e3.mostrarEstado();
-		e4.mostrarEstado();
+		estudiante1.mostrarEstado();
+		estudiante2.mostrarEstado();
+		estudiante3.mostrarEstado();
+		estudiante4.mostrarEstado();
 		
-		if (e2.comparar(e3)) {
+		if (estudiante2.comparar(estudiante3)) {
 			System.out.println("Iguales");
 		} else {
 			System.out.println("Diferentes");
